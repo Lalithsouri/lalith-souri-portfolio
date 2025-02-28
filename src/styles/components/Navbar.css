@@ -1,0 +1,38 @@
+/* src/styles/components/Navbar.css */
+#desktop-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(10, 0, 0);
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Hide on mobile */
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+  }

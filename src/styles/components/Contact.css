@@ -1,0 +1,71 @@
+/* src/styles/components/Contact.css */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    min-height: 50vh;
+    padding: 2rem 0;
+    margin: 0 8rem;
+  }
+  
+  .section_text_p1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .contact-info-header-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: 1px solid rgb(163, 163, 163);
+    background: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-info-container:hover {
+    transform: translateY(-3px);
+  }
+  
+  .contact-info-container p {
+    font-size: large;
+  }
+  
+  .contact-icon {
+    height: 3rem;
+    cursor: default;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 1200px) {
+    #contact {
+      margin: 0 5%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-info-header-container {
+      flex-direction: column;
+      width: 90%;
+      max-width: 400px;
+    }
+  }
