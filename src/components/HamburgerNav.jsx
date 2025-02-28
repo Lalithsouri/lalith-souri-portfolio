@@ -1,6 +1,7 @@
 // HamburgerNav.jsx
 import React, { useState, useEffect } from 'react';
 import '../styles/components/HamburgerNav.css';
+import resumePDF from '../assets/resume.pdf'; // Import the PDF
 
 const HamburgerNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,6 +46,7 @@ const HamburgerNav = () => {
         <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
         <li><a href="#techstack" onClick={toggleMenu}>Tech Stack</a></li>
         <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+        <li><a href={resumePDF} target="_blank" rel="noopener noreferrer">Resume</a></li>
       </ul>
     </nav>
   );
