@@ -20,7 +20,7 @@ const Profile = () => {
   return (
     <section id="profile">    
       <div className="section_pic-container">
-        <img src={profilePic} alt="Souri's profile picture"/>
+        <img src={profilePic} alt="Souri's profile"/>
       </div>
       
       <div className="section_text">
